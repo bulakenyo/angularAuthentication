@@ -1,0 +1,26 @@
+
+--Creating new Angular project
+ng new angularAuthentication
+
+--Install Material UI
+ng add @angular/material
+
+--Install Toast Alert
+npm install ngx-toastr -save
+* after executing the command
+---add in the app.module.ts
+import { ToastrModule } from 'ngx-toastr';
+---then add in the imports array
+imports: [
+    ToastrModule.forRoot() 
+  ],
+---then in angular.json add this line
+"styles": [
+             "node_modules/ngx-toastr/toastr.css"
+            ],
+
+-- Run Json-server API 
+-- First install the json-server first then execute the 2nd command
+npm install -g json-server
+
+json-server --watch db.json
