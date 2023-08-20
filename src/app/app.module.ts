@@ -8,11 +8,21 @@ import { MaterialModule } from 'src/material.module';
 import { ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http'
 import { ToastrModule } from 'ngx-toastr';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
+import { UserlistingComponent } from './userlisting/userlisting.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
+    UpdatepopupComponent,
+    UserlistingComponent
   ],
   imports: [
     BrowserModule,
